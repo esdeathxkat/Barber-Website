@@ -1,0 +1,291 @@
+body {
+    font-family: 'Fahkwang', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navAndMainphoto {
+    background: url('../barbershops.jpg.webp') center/cover no-repeat;
+}
+
+nav {
+    background-color: transparent; /* Make the navbar background transparent */
+    overflow: hidden;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 27px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar .nav-links a:active {
+    color: #ffa07a; /* Set the text color when the link is clicked */
+}
+
+.main-section {
+    background-color: transparent; /* Make the main section background transparent */
+    color: #fff;
+    display: flex;
+}
+
+.section-content {
+    display: flex;
+    justify-content: flex-start; /* Align the content to the start (left edge) */
+    align-items: center;
+    height: 40vh; /* Ensure the content takes the full height of the viewport */
+    margin: 0 auto;
+    width: 80%; /* Adjust the width of the section */
+    margin-left: 10%; /* Move the section 10% from the left */
+}
+
+.section-content h1 {
+    font-size: 75px;
+    margin: 0; /* Remove default margin */
+}
+.servicecontent {
+    background-color: #333;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.serviceHeader .serviceHeader2{
+    margin-left: 0;
+}
+.serviceHeader{
+    padding-bottom: 40px;
+    padding-top: 50;
+}
+
+.servicecontainer h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+.servicecontainer p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.servicecontainer p:first-child {
+    margin-bottom: px; /* Increase the margin-bottom for the first paragraph */
+}
+
+.servicecontainer p:last-child {
+    margin-top: 20px; /* Increase the margin-top for the second paragraph */
+}
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo-img {
+    width: 50px; /* Adjust the width of the footer logo */
+}
+
+.footer-info {
+    max-width: 70%; /* Adjust the maximum width of the footer information */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.book-now-btn {
+    background-color: #ffa07a;
+    color: #fff;
+    padding-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now-btn:hover {
+    background-color: #ff7f50;
+}
+.nav-links button {
+    height: 30px; /* Adjust the height as needed */
+    line-height: 30px; /* Match the line height with the button height */
+    padding: 0 10px; /* Optional: Adjust padding to maintain button width */
+    margin-top: 10px; /* Adjust the margin-top to align with other navbar items */
+}
+
+.hairstyle-image {
+    display: inline-block; /* Change display to inline-block to allow images to be displayed inline */
+    margin: 0; /* Remove any default margin */
+    width: 142px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    padding-bottom: 40px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: space-around; /* Distribute space evenly between images */
+    max-width: 100%; /* Set maximum width for the container */
+    margin: 0 auto; /* Center-align the container */
+}
+
+
+.image-wrapper {
+    text-align: center;
+    padding: 5px; /* Add padding around each image */
+    flex: 0 0 calc(20% - 10px); /* Set width for each image container (20% width with padding) */
+    margin-bottom: 20px; /* Add space between rows of images */
+}
+
+
+
+.serviceHeader, .serviceHeader2, .mission {
+    text-align: center;
+}
+
+.image-label {
+    margin-top: 5px; /* Add some spacing between the image and label */
+    font-size: 14px; /* Adjust the font size of the label */
+}
+
+.popup-content label {
+    margin-bottom: 20px; /* Increase vertical margin between each label */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333333ee;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"],
+.popup-content input[type="date"],
+.popup-content select,
+.popup-content textarea {
+    width: calc(100% - 30px); /* Adjusted width to account for scrollbar width */
+    padding-right: 20px; /* Add padding to the right to accommodate the scrollbar */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 15px; /* Add spacing between input fields */
+    font-family: 'Fahkwang', sans-serif; /* Use appropriate font */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Set text color */
+}
+
+.popup-content input[type="text"]:focus,
+.popup-content input[type="email"]:focus,
+.popup-content input[type="tel"]:focus,
+.popup-content input[type="date"]:focus,
+.popup-content select:focus,
+.popup-content textarea:focus {
+    outline: none;
+    border-color: #ffa07a; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 160, 122, 0.5); /* Add shadow on focus */
+}
+
+.popup-content ::placeholder {
+    color: #999; /* Style placeholder text */
+}
+
+.popup-content {
+    text-align: center;
+    max-height: 80vh; /* Set maximum height for the popup content */
+    overflow-y: auto; /* Add vertical scrollbar when content exceeds height */
+    width: calc(100% - 30px); /* Adjusted width to account for scrollbar width */
+    padding-right: 20px; /* Add padding to the right to accommodate the scrollbar */
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25px; 
+}
+
+.popup-content label {
+    align-self: flex-start; 
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.popup-backdrop.show {
+    display: block;
+}
+
+.book-now-btn:hover {
+    background-color: #ff7f50;
+}
+.contact-us-link {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+.popup-content small {
+    text-align: left; /* Align the text to the left */
+    margin-left: 10px; /* Add left margin to move it closer to the left edge */
+}
+

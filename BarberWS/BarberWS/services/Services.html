@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fahkwang' rel='stylesheet'>
+    <link rel="stylesheet" href="services.css">
+    <script src="../popup.js"></script>
+    <title>A Cut Above Title</title>
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div class="navAndMainphoto">
+            <nav>
+                <div class="navbar">
+                    <div class="logo-container">
+                        <img src="../transparent_2024-03-11T22-00-34.png" alt="Logo" class="logo">
+                        <div class="site-name">A Cut Above</div>
+                    </div>
+                    <div class="nav-links">
+                        <a href="../index.html">Home</a>
+                        <a href="../about/about.html">About</a>
+                        <a href="../services/services.html">Services</a>
+                        <button class="book-now-btn" onclick="togglePopup()">Book Now</button>
+                    </div>
+                </div>
+            </nav>
+            <section class="main-section">
+                <div class="section-content">
+                    <h1>
+                        Services
+                    </h1>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="servicecontent">
+        <div class="servicecontainer">
+            <section class="serviceHeader">
+                <h2>Hair Styles</h2>
+            </section>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <p class="image-label">Buzz</p>
+                    <img src="buzz.jpg" alt="Buzz" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Fade</p>
+                    <img src="fade.jpg" alt="Fade" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Pompadour</p>
+                    <img src="pompadour.jpg" alt="Pompadour" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Ceasar</p>
+                    <img src="ceasar.jpg" alt="Ceasar" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">French Crop</p>
+                    <img src="french.jpg" alt="French" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Flow</p>
+                    <img src="flow.jpg" alt="flow" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Butch</p>
+                    <img src="butch.jpg" alt="butch" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Bowl</p>
+                    <img src="bowl.jpg" alt="bowl" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Crew</p>
+                    <img src="crew.jpg" alt="crew" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Comb Over</p>
+                    <img src="comb.jpg" alt="comb" class="hairstyle-image">
+                </div>
+            </div>
+            <section class="serviceHeader2">
+                <h2>Beard Trims</h2>
+            </section>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <p class="image-label">Stubble</p>
+                    <img src="stubble.jpg" alt="Stubble" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Goatee</p>
+                    <img src="goatee.jpg" alt="Goatee" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">French Fork</p>
+                    <img src="fork.jpg" alt="Fork" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Circle</p>
+                    <img src="circle.jpg" alt="Circle" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Imperial</p>
+                    <img src="imp.jpg" alt="Imp" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Anchor</p>
+                    <img src="anchor.jpg" alt="anchor" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Garibaldi</p>
+                    <img src="gari.jpg" alt="gari" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Mutton Chop</p>
+                    <img src="mc.jpg" alt="mc" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Balbo</p>
+                    <img src="balbo.png" alt="Balbo" class="hairstyle-image">
+                </div>
+                <div class="image-wrapper">
+                    <p class="image-label">Verdi</p>
+                    <img src="verdi.png" alt="verdi" class="hairstyle-image">
+                </div>
+            </div>
+            <section class="serviceHeader2">
+                <p class="mission"><em>... and MORE!</em>
+                <p><a href="#" class="contact-us-link" onclick="showContactInfoPopup()">Contact us</a> for appointment changes and custom requests as we take inquiries.</p></p>
+            </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../transparent_2024-03-11T22-00-34.png" alt="Footer Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 A Cut Above. All rights reserved.</p>
+                <p>Address: 1905 University Ave, Huntsville, Texas, 77318</p>
+                <p>Email: info@acutabove.com | Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup()">&times;</span> 
+            <h2>Book an Appointment</h2>
+            <p>Please fill out the form below to book your appointment:</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 1234567890</small><br><br>
+                
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="time">Appointment Time:</label>
+                <select id="time" name="time" required>
+                    <option value="">Choose a time...</option>
+                    <option value="">Choose a time...</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="9:30 AM">9:30 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="1:30 PM">1:30 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="2:30 PM">2:30 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="3:30 PM">3:30 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="4:30 PM">4:30 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                </select><br>
+
+                <label for="services">Select Service:</label>
+                <select id="services" name="services" required>
+                    <option value="">Choose a service...</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="beard-trim">Beard Trim</option>
+                    <!-- Add more service options as needed -->
+                </select><br>
+
+                <label for="notes">Additional Notes:</label><br>
+                <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="contact-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeContactInfoPopup()">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Address: 1905 University Ave, Huntsville, Texas, 77318</p>
+            <p>Email: info@acutabove.com | Phone: (123) 456-7890</p>
+        </div>
+    </div>
+
+    <div class="popup-backdrop" id="popup-backdrop"></div>
+    <script>
+        // Add event listener to phone number input field
+        document.getElementById('phone').addEventListener('input', function() {
+        var phone = this.value.replace(/\D/g, ''); // Remove non-numeric characters
+        var formattedPhone = '';
+        phone = phone.slice(0, 10);
+
+        // Format phone number with dashes
+        for (var i = 0; i < phone.length; i++) {
+            if (i === 3 || i === 6) {
+                formattedPhone += '-';
+            }
+            formattedPhone += phone[i];
+        }
+    
+        // Update input field with formatted phone number
+        this.value = formattedPhone;
+        });
+
+        function showContactInfoPopup() {
+            var contactPopup = document.getElementById("contact-popup");
+            var backdrop = document.getElementById("popup-backdrop");
+
+            // Show the contact info popup and backdrop
+            contactPopup.classList.add("show");
+            backdrop.classList.add("show");
+        }
+
+        // Function to close the contact info popup
+        function closeContactInfoPopup() {
+            var contactPopup = document.getElementById("contact-popup");
+            var backdrop = document.getElementById("popup-backdrop");
+
+            // Hide the contact info popup and backdrop
+            contactPopup.classList.remove("show");
+            backdrop.classList.remove("show");
+        }
+
+        // Function to toggle the popup and backdrop
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            var backdrop = document.getElementById("popup-backdrop");
+            popup.classList.toggle("show");
+            backdrop.classList.toggle("show");
+
+            // Update available time slots when the popup is toggled
+            updateAvailableTimeSlots();
+        }
+
+
+        // Function to set the available time slots based on the selected date
+        function updateAvailableTimeSlots() {
+            var dateInput = document.getElementById('date');
+            var timeSelect = document.getElementById('time');
+
+            // Clear existing options
+            timeSelect.innerHTML = '';
+
+            // Get the selected date
+            var selectedDate = new Date(dateInput.value);
+
+            // Define available time slots
+            var availableTimeSlots = [
+                "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM",
+                "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
+                "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM",
+                "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM" // Limiting to 3:00 PM
+            ];
+            
+
+            // For Saturdays, limit time slots to 10:00 AM - 3:00 PM
+            if (selectedDate.getDay() === 5) { // Saturday (0-indexed)
+                availableTimeSlots = availableTimeSlots.filter(function (timeSlot) {
+                    var timeParts = timeSlot.split(':');
+                    var hours = parseInt(timeParts[0]);
+                    if (timeParts[1].includes('PM') && hours !== 12) {
+                        hours += 12; // Convert hours to 24-hour format
+                    } else if (timeParts[1].includes('AM') && hours === 12) {
+                        hours = 0; // Convert 12 AM to 0
+                    }
+                    return hours >= 10 && hours < 15; // Include time slots between 10:00 AM and 2:30 PM
+                });
+            }
+            if (selectedDate.getDay() === 6){
+                return;
+            }
+
+            // Populate time select with available time slots
+            availableTimeSlots.forEach(function (timeSlot) {
+                var option = document.createElement('option');
+                option.text = timeSlot;
+                option.value = timeSlot;
+                timeSelect.appendChild(option);
+            });
+        }
+
+        // Attach event listener to date input to update available time slots when date changes
+        document.getElementById('date').addEventListener('change', updateAvailableTimeSlots);
+
+        // Initially update available time slots based on default selected date
+        updateAvailableTimeSlots();
+
+        // Set the minimum date to today for the date input field
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        var yyyy = today.getFullYear();
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById('date').min = today;
+
+        // Disable Sundays
+        var dates = document.querySelectorAll('input[type="date"]');
+        dates.forEach(function (date) {
+            date.addEventListener('input', function () {
+                var day = new Date(this.value).getUTCDay();
+                if (day === 0) { // Sunday
+                    this.setCustomValidity('Sundays are not available for appointments');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        });
+    function submitForm(event) {
+        event.preventDefault(); // Prevent form submission to a server (we handle it here)
+
+        // Show confirmation message
+        alert("Appointment made!\nAn Email will be sent for confirmation");
+
+        // Close the popup
+        togglePopup();
+
+        console.log("Form submitted successfully!");
+
+
+    }
+
+    document.getElementById('popup').addEventListener('submit', submitForm);
+    
+    </script>
+</body>
+</body>
+
+</html>
